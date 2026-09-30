@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameProject</title>
+    <base href="/" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link href="GameProject.styles.css" rel="stylesheet" />
+    <link href="manifest.webmanifest" rel="manifest" />
+    <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
+</head>
+
+<body>
+    <div id="app">
+        <div class="loading-progress-text">Cargando juego...</div>
+    </div>
+
+    <div id="blazor-error-ui">
+        Se produjo un error no controlado.
+        <a href="" class="reload">Recargar</a>
+        <a class="dismiss">🗙</a>
+    </div>
+
+    <script src="_framework/blazor.webassembly.js"></script>
+    <!-- Importante: Ruta absoluta con prefijo '/' y versionado -->
+    <script src="canvasEngine.js?v=3.0"></script>
+    <script>navigator.serviceWorker.register('service-worker.js');</script>
+</body>
+
+</html>
